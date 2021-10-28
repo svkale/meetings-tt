@@ -1,0 +1,94 @@
+{
+	"Monday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME301"
+		},{
+			"StartTime": 12,
+			"Duration": 1,
+			"CourseCode": "ME307"
+		},{
+			"StartTime": 14,
+			"Duration": 1,
+			"CourseCode": "ME305"
+		},{
+			"StartTime": 15,
+			"Duration": 3,
+			"CourseCode": "ME351"
+		}
+	],
+	"Tuesday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME303"
+		},{
+			"StartTime": 11,
+			"Duration": 1,
+			"CourseCode": "ME305"
+		},{
+			"StartTime": 12,
+			"Duration": 1,
+			"CourseCode": "ME301"
+		},{
+			"StartTime": 15,
+			"Duration": 3,
+			"CourseCode": "ME355",
+			"Batch": 1
+		}
+	],
+	"Wednesday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME305"
+		},{
+			"StartTime": 11,
+			"Duration": 1,
+			"CourseCode": "ME301"
+		},{
+			"StartTime": 12,
+			"Duration": 1,
+			"CourseCode": "ME307"
+		},{
+			"StartTime": 15,
+			"Duration": 3,
+			"CourseCode": "ME353"
+		}
+	],
+	"Thursday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME303"
+		}
+	],
+	"Friday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME303"
+		},{
+			"StartTime": 11,
+			"Duration": 2,
+			"CourseCode": "ME307"
+		},{
+			"StartTime": 15,
+			"Duration": 3,
+			"CourseCode": "ME355",
+			"Batch": 2
+		}
+	],
+	"Saturday": [
+		{
+			"StartTime": 10,
+			"Duration": 1,
+			"CourseCode": "ME303"
+		},{
+			"StartTime": 11,
+			"Duration": 1,
+			"CourseCode": "ME301"
+		}
+	]
+}
