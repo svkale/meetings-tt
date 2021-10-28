@@ -1,0 +1,45 @@
+[
+	{
+		"Code": "ME301",
+		"Name": "Heat Transfer",
+		"Coordinator": "Dr. S. Dhinakaran",
+		"Instructors": ["Dr. Ritunesh Kumar", "Dr. S. Dhinakaran"],
+		"GMeetCode": "kea-rigx-ocd"
+	},{
+		"Code": "ME303",
+		"Name": "Kinematics and Dynamics of Machines",
+		"Coordinator": "Dr. Shailesh Kundalwal",
+		"Instructors": ["Dr. Shailesh Kundalwal"],
+		"GMeetCode": "whw-ifwe-wzu"
+	},{
+		"Code": "ME305",
+		"Name": "Machining Science and Metrology",
+		"Coordinator": "Dr. Kazi Sabiruddin",
+		"Instructors": ["Dr. Kazi Sabiruddin"],
+		"GMeetCode": "dwq-nkhk-vfo"
+	},{
+		"Code": "ME307",
+		"Name": "Principles of Industrial Engineering",
+		"Coordinator": "Dr. Bhupesh K. Lad",
+		"Instructors": ["Dr. Bhupesh K. Lad"],
+		"GMeetCode": "vee-qhsh-euo"
+	},{
+		"Code": "ME351",
+		"Name": "Heat Transfer Lab",
+		"Coordinator": "Dr. Ritunesh Kumar",
+		"Instructors": ["Dr. Ritunesh Kumar", "Dr. S. Dhinakaran"],
+		"GMeetCode": "xvz-iast-who"
+	},{
+		"Code": "ME353",
+		"Name": "Kinematics and Dynamics of Machines Lab",
+		"Coordinator": "Dr. Shailesh Kundalwal",
+		"Instructors": ["Dr. Shailesh Kundalwal"],
+		"GMeetCode": "whw-ifwe-wzu"
+	},{
+		"Code": "ME355",
+		"Name": "Machining Science and Metrology Lab",
+		"Coordinator": "Dr. Kazi Sabiruddin",
+		"Instructors": ["Dr. Kazi Sabiruddin", "Dr. Satyajit Chatterjee"],
+		"GMeetCode": "wye-ovtw-jkm"
+	}
+]
