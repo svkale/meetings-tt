@@ -3,7 +3,6 @@ const MEET_COMP = "Google";
 
 const now = new Date();
 const msg_box = document.getElementById("message");
-msg_box.innerHTML = "";
 
 if(localStorage && !localStorage.getItem("Setup")) {
 	localStorage.setItem("Setup", "0");
@@ -38,16 +37,17 @@ function join() {
 			fetch("../courses.json").then(res => res.json())
 		])
 		.then(res => {
-			let next_class_timing = 24;
+			let next_class_timing = 24, next_class_code = "";
 			for(let i of res[0][day - 1]) {
 				if(!i.Batch || i.Batch == localStorage.getItem("Batch")) {
-					if(hour >= i.StartTime && hour - i.StartTime < i.Duration) {
+					if((hour >= i.StartTime && hour - i.StartTime < i.Duration) || (hour == i.StartTime - 1 && mins >= 55)) {
 						msg_box.insertAdjacentHTML("befoeend", "Joining lecture of " + i.CourseCode);
 						location.href = PREFIX_LINK + res[1][i.CourseCode]["GMeetCode"] + "?authuser=" + localStorage.getItem("authuser");
 						return;
 					}
-					if(hour < i.StartTime) {
-						next_class_timing = Math.min(next_class_timing, i.StartTime);
+					if(hour < i.StartTime && next_class_timing > i.StartTime) {
+						next_class_timing = i.StartTime;
+						next_class_code = i.CourseCode;
 					}
 				}
 			}
@@ -55,10 +55,8 @@ function join() {
 			if(next_class_timing == 24)
 				msg_box.insertAdjacentHTML("beforeend","<br>That's it for the day");
 			else
-				alert("Next class at " + next_class_timing + ":00.");
+				alert("Next class at " + next_class_timing + ":00 of " + next_class_code + ".");
 			return;
 		});
 	}
 }
-
-join();
