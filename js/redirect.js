@@ -41,7 +41,7 @@ function join() {
 			for(let i of res[0][day - 1]) {
 				if(!i.Batch || i.Batch == localStorage.getItem("Batch")) {
 					if((hour >= i.StartTime && hour - i.StartTime < i.Duration) || (hour == i.StartTime - 1 && mins >= 55)) {
-						msg_box.insertAdjacentHTML("befoeend", "Joining lecture of " + i.CourseCode);
+						msg_box.insertAdjacentHTML("beforeend", "Joining lecture of " + i.CourseCode);
 						location.href = PREFIX_LINK + res[1][i.CourseCode]["GMeetCode"] + "?authuser=" + localStorage.getItem("authuser");
 						return;
 					}

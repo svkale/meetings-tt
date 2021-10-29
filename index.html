@@ -3,10 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>IITI BTech Mech 3rd</title>
 	<meta name="author" content="Siddharth Kale">
+	<title>IITI BTech Mech 3rd</title>
+	<link rel="stylesheet" href="https://static-data.techsenary.com/papers/style.css">
 </head>
 <body>
+	<header>
+		<h1>IITI Mech 3rd Year Time Table</h1>
+	</header>
+	<main>
+		<p>
+			This API (<a href="./join">join</a>) takes you to the meeting using the link (if pre-provided by the course instructor) if the lecture is going on, or there are five minutes to start the lecture.
+		</p>
+		The following features are not present, and are considered in the scope of the project:
+		<ul>
+			<li>Take to the meeting scheduled as extra lecture.</li>
+			<li>Cancel an existing lecture.</li>
+			<li>Give user the choice when one lecture is just ending and the other is just starting.</li>
+			<li>Show timetable for the week with extra or cancelled lectures.</li>
+			<li>Show all the links course wise.</li>
+		</ul>
+		<p>
+			The code is published on <a href="https://github.com/svkale/meetings-tt">github</a>. The timetable and the links are taken from the same repository in the form of json files. Any additions / extra feature ideas / creative pull requests are welcome.
+			<strong>
+				It is highly recomended to not use this API for exams, as this is can create confusion.
+			</strong>
+		</p>
+		<button onclick="reset_account();">
+			Reset settings
+		</button>
+	</main>
+	<footer>
+		<p>
+			**This is just the project made out of curiosity, and NOT officially provided by the institute.
+		</p>
+	</footer>
+	<script src="./js/default.js"></script>
+	<script src="./js/redirect.js"></script>
 </body>
-<script src="./js/default.js"></script>
 </html>
