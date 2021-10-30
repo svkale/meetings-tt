@@ -14,6 +14,8 @@ function reset_account() {
 		msg_box.innerHTML = "Your broser does not support this app.";
 		return;
 	}
+	localStorage.setItem("Batch","1");
+	localStorage.setItem("authuser","0");
 	localStorage.setItem("Batch",prompt("This is one time setup.\nEnter your batch number.","1"));
 	localStorage.setItem("authuser",prompt("This is one time setup.\nEnter the serial number (index) of your college account on the list of all " + MEET_COMP + " accounts. (Leave 0 if on mobile device)","0"));
 	localStorage.setItem("Setup","1");
@@ -42,8 +44,9 @@ function join() {
 				if(!i.Batch || i.Batch == localStorage.getItem("Batch")) {
 					if((hour >= i.StartTime && hour - i.StartTime < i.Duration) || (hour == i.StartTime - 1 && mins >= 55)) {
 						msg_box.insertAdjacentHTML("beforeend", "Joining lecture of " + i.CourseCode);
-						location.href = PREFIX_LINK + res[1][i.CourseCode]["GMeetCode"] + "?authuser=" + localStorage.getItem("authuser");
-						return;
+						let lnk = document.createElement("a");
+						lnk.href = PREFIX_LINK + res[1][i.CourseCode]["GMeetCode"] + "?authuser=" + localStorage.getItem("authuser");
+						return lnk.click();
 					}
 					if(hour < i.StartTime && next_class_timing > i.StartTime) {
 						next_class_timing = i.StartTime;
